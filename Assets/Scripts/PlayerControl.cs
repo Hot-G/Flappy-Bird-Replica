@@ -32,7 +32,7 @@ public class PlayerControl : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.rotation = Quaternion.Euler(0, 0, Mathf.Clamp(rb.velocity.y * 20, -40, 40));
+        transform.rotation = Quaternion.Euler(0, 0, Mathf.Clamp(rb.velocity.y * 12, -40, 40));
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
